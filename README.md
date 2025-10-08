@@ -118,7 +118,7 @@ Database: `osTicket` | Username: `root` | Password: `root` → Click **Install N
 
 ## 🎉 Installation Complete!
 You now have **osTicket v1.15.8** successfully installed on your VM.  
-<img width="500" alt="Success" src="https://github.com/user-attachments/assets/26c9aa1f-a32d-4ec1-8273-4224e3c9a7da"/>
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/0441f95f-b941-4b98-9451-8e8be64f15d5" />
 
 **Next Steps:**
 - Configure departments and agents  
