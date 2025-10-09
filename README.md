@@ -73,7 +73,7 @@ Install each component from `osTicket-Installation-Files`, unzip PHP to `C:\PHP`
 <img width="500" alt="PHP Setup" src="https://github.com/user-attachments/assets/f93a3a0c-30ef-449e-88a8-905071b59353"/>
 
 ### Step 9: Install MySQL 5.5.62
-Select **Typical Setup → Launch Configuration Wizard → Standard Configuration** and set username/password.  
+Select **Typical Setup → Launch Configuration Wizard → Standard Configuration** and set username/password. (root/root)  
 <img width="400" alt="MySQL Setup" src="https://github.com/user-attachments/assets/109d1b0b-f8c2-4bd1-8dd2-cf9a5a32d818"/>
 
 ### Step 10: Register PHP in IIS
@@ -81,7 +81,7 @@ In IIS (Run as Admin) → PHP Manager → Register `php-cgi.exe` → Restart IIS
 <img width="600" alt="Register PHP" src="https://github.com/user-attachments/assets/2086f773-27f0-4026-8730-0b4bb5db0d80"/>
 
 ### Step 11: Install osTicket v1.15.8
-Copy the **upload** folder into `C:\inetpub\wwwroot` and rename it to **osTicket**. Restart IIS.  
+From osTicket-Installation-Files unzip osTicket-v1.15.8 and look for upload folder. Copy the **upload** folder into `C:\inetpub\wwwroot` and rename it to **osTicket**. Restart IIS.  
 <img width="600" alt="osTicket Folder" src="https://github.com/user-attachments/assets/120b7ba8-5bef-4228-9864-4ac86e4a08ae"/>
 
 ### Step 12: Browse osTicket
@@ -89,7 +89,7 @@ In IIS → **Default Web Site → osTicket → Browse :80**
 <img width="600" alt="osTicket Browse" src="https://github.com/user-attachments/assets/3b90cfe2-c879-49d3-a64b-e47aff7bd6a3"/>
 
 ### Step 13: Enable PHP Extensions
-Enable `php_imap.dll`, `php_intl.dll`, `php_opcache.dll` in PHP Manager.  
+Note some extentions on osTicket are not enabled. Go to IIS enable `php_imap.dll`, `php_intl.dll`, `php_opcache.dll` in PHP Manager.  
 <img width="700" alt="PHP Extensions" src="https://github.com/user-attachments/assets/4e779c3a-d8e0-4099-846d-a3ceb68c3265"/>
 
 ### Step 14: Rename Configuration File
@@ -107,7 +107,7 @@ Fill in Helpdesk Name, Admin Email, etc.
 <img width="400" alt="Setup Form" src="https://github.com/user-attachments/assets/b1df63cf-993a-430d-a97c-f6b3f6a5340f"/>
 
 ### Step 17: Create MySQL Database with HeidiSQL
-Connect to MySQL (`root/root`) → Create database **osTicket**.  
+From osTicket-Installation-Files, install HeidiSQL. Connect to MySQL (`root/root`) → Create database **osTicket**.  
 <img width="400" alt="HeidiSQL" src="https://github.com/user-attachments/assets/df632000-9f76-4836-8257-0ac5cd563fad"/>
 
 ### Step 18: Complete osTicket Setup
